@@ -11,7 +11,8 @@ function ProductList({ onHomeClick }) {
   const dispatch = useDispatch();
   const cartItems = useSelector(state => state.cart.items);
 
-  const plantsArray = [
+  
+const plantsArray = [
     {
       category: "Air Purifying Plants",
       plants: [
@@ -32,10 +33,70 @@ function ProductList({ onHomeClick }) {
           image: "https://cdn.pixabay.com/photo/2019/06/12/14/14/peace-lilies-4269365_1280.jpg",
           description: "Removes mold spores and purifies the air.",
           cost: "$18"
+        },
+        {
+          name: "Aloe Vera",
+          image: "https://cdn.pixabay.com/photo/2017/01/20/15/06/aloe-vera-1994433_1280.jpg",
+          description: "Improves indoor air quality.",
+          cost: "$10"
+        },
+        {
+          name: "Bamboo Palm",
+          image: "https://cdn.pixabay.com/photo/2018/02/13/10/15/palm-3152670_1280.jpg",
+          description: "Removes toxins from the air.",
+          cost: "$20"
+        },
+        {
+          name: "Areca Palm",
+          image: "https://cdn.pixabay.com/photo/2016/11/29/05/08/palm-1867671_1280.jpg",
+          description: "Natural humidifier.",
+          cost: "$22"
+        }
+      ]
+    },
+    {
+      category: "Indoor Decorative Plants",
+      plants: [
+        {
+          name: "Fiddle Leaf Fig",
+          image: "https://cdn.pixabay.com/photo/2018/01/19/17/07/fiddle-leaf-fig-3097163_1280.jpg",
+          description: "Large glossy leaves for decor.",
+          cost: "$25"
+        },
+        {
+          name: "Monstera",
+          image: "https://cdn.pixabay.com/photo/2020/06/09/06/18/monstera-5272598_1280.jpg",
+          description: "Stylish tropical plant.",
+          cost: "$30"
+        },
+        {
+          name: "ZZ Plant",
+          image: "https://cdn.pixabay.com/photo/2021/01/24/19/49/zamioculcas-5945506_1280.jpg",
+          description: "Low maintenance indoor plant.",
+          cost: "$20"
+        },
+        {
+          name: "Rubber Plant",
+          image: "https://cdn.pixabay.com/photo/2020/04/19/08/15/rubber-plant-5060070_1280.jpg",
+          description: "Bold decorative foliage.",
+          cost: "$28"
+        },
+        {
+          name: "Calathea",
+          image: "https://cdn.pixabay.com/photo/2019/09/21/07/14/calathea-4492760_1280.jpg",
+          description: "Beautiful patterned leaves.",
+          cost: "$24"
+        },
+        {
+          name: "Pothos",
+          image: "https://cdn.pixabay.com/photo/2017/08/07/19/42/pothos-2609152_1280.jpg",
+          description: "Easy to grow vine plant.",
+          cost: "$14"
         }
       ]
     }
   ];
+  
 
   const handleAddToCart = (product) => {
     dispatch(addItem(product));

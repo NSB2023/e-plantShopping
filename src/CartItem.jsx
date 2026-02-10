@@ -67,6 +67,16 @@ const CartItem = ({ onContinueShopping }) => {
       ))}
 
       <button onClick={onContinueShopping}>Continue Shopping</button>
+      <button
+          onClick={() => alert("Checkout Coming Soon!")}
+          className="checkout-button"
+        >
+         Checkout
+    </button>
+
+       
+
+
     </div>
   );
 };

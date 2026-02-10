@@ -1,19 +1,26 @@
-# coding-project-template
-# Paradise Nursery Shopping Application
 
-This is a React + Redux shopping cart application built as part of the
-IBM / Coursera Front-End Development final project.
+# Paradise Nursery Shopping Application !:
+
+Paradise Nursery is a React-based shopping application that allows users to browse, add, and manage plants in a shopping cart.
 
 ## Features
-- Product listing by category
-- Add to cart functionality
-- Cart quantity management using Redux
-- Global state management with Redux Toolkit
+- Browse plants by category
+- Add plants to cart
+- Increase or decrease quantity
+- Remove items from cart
+- View total cart amount
+- Redux-based global state management
 
-## Tech Stack
+## Technologies Used
 - React
 - Redux Toolkit
 - Vite
+- GitHub Pages
+
+## How to Run
+```bash
+npm install
+npm run dev
 
 ## Author
 NSB2023
